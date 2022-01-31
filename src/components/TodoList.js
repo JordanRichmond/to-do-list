@@ -5,12 +5,14 @@ function TodoList({ todosList, toggleComplete, removeTodo }) {
     return (
         <ul>
             {todosList.map(todo => {
+                return (
                 <Todo 
                 key={todo.id} 
                 todo={todo} 
                 toggleComplete={toggleComplete}
                 removeTodo={removeTodo}
                 />
+                )
             })}
         </ul>
     );
